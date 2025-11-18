@@ -162,5 +162,6 @@ function toggleFavorite(title) {
 document.getElementById("watch-btn").addEventListener("click", () => {
   alert("Playing movie...");
 });
+updateHero(movies[0]);
 
 
