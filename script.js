@@ -1,0 +1,184 @@
+// Movie Data
+const movies = [
+  {
+    title: "Inception",
+    year: "2010",
+    genre: "Sci-Fi",
+    rating: "8.8/10",
+    description: "A thief who steals secrets through dream invasion must perform the impossible — inception.",
+    banner: "inception-banner.jpg",
+    poster: "inception.jpg"
+  },
+  {
+    title: "Joker",
+    year: "2019",
+    genre: "Drama",
+    rating: "8.5/10",
+    description: "Arthur Fleck, a failed comedian, descends into madness and becomes Gotham’s infamous Joker.",
+    banner: "joker-banner.jpg",
+    poster: "joker.jpg"
+  },
+  {
+    title: "Jurassic World: Fallen Kingdom",
+    year: "2018",
+    genre: "Action/Sci-Fi",
+    rating: "6.2/10",
+    description: "When the island's dormant volcano begins roaring to life, Owen and Claire mount a campaign to rescue the remaining dinosaurs from extinction.",
+    banner: "jurassic-banner.jpg",
+    poster: "jurassic.jpg"
+},
+  {
+    title: "Interstellar",
+    year: "2014",
+    genre: "Adventure",
+    rating: "8.6/10",
+    description: "A team of explorers travels through a wormhole to ensure humanity's survival.",
+    banner: "interstellar-banner.jpg",
+    poster: "interstellar.jpg"
+  },
+  {
+    title: "It",
+    year: "2017",
+    genre: "Horror",
+    rating: "7.3/10",
+    description: "A group of kids faces their worst fears when an evil clown terrorizes their town.",
+    banner: "it-banner.jpg",
+    poster: "it.jpg"
+  },
+  {
+    title: "The Dark Knight",
+    year: "2008",
+    genre: "Action",
+    rating: "9.0/10",
+    description: "Batman faces his greatest nemesis, the Joker, in a battle for Gotham’s soul.",
+    banner: "dark knight-banner.jpg",
+    poster: "dark knight.jpg"
+  },
+  {
+    title: "Dune",
+    year: "2021",
+    genre: "Sci-Fi",
+    rating: "8.0/10",
+    description: "Paul Atreides must travel to a dangerous desert planet to ensure the future of his family.",
+    banner: "dune-banner.jpg",
+    poster: "dune.jpg"
+  },
+  {
+    title: "Encanto",
+    year: "2021",
+    genre: "Animation/Family",
+    rating: "7.3/10",
+    description: "A young Colombian girl, the only member of her family without magical powers, discovers her own extraordinary gift while uncovering the secrets of her family’s magic.",
+    banner: "encanto-banner.jpg",
+    poster: "encanto.jpg"
+},
+  {
+    title: "13 Hours",
+    year: "2016",
+    genre: "Action/Drama",
+    rating: "7.3/10",
+    description: "During a terrorist attack on a U.S. compound in Libya, six members of a security team fight to defend their fellow Americans.",
+    banner: "13hours-banner.jpg",
+    poster: "13hours.jpg"
+},
+{
+  title: "Inside Out 2",
+  year: "2024",
+  genre: "Animation/Family",
+  rating: "7.9/10",
+  description: "Teenager Riley navigates new emotions like Anxiety, Envy, and Embarrassment as she faces the challenges of growing up and finding her true self.",
+  banner: "inside out 2-banner.jpg",
+  poster: "inside out 2.jpg"
+},
+{
+  title: "John Wick: Ballerina",
+  year: "2025",
+  genre: "Action/Thriller",
+  rating: "8.1/10",
+  description: "In the gritty underworld of assassins, a ballerina trained to kill seeks revenge against those who destroyed her family — set in the John Wick universe.",
+  banner: "jwballerina-banner.jpg",
+  poster: "jwballerina.jpg"
+},
+{
+  title: "The Grinch",
+  year: "2018",
+  genre: "Animation/Family",
+  rating: "8.8/10",
+  description: "A cynical Grinch plots to ruin Christmas for the cheerful residents of Whoville, but his heart might just grow three sizes bigger.",
+  banner: "grinch-banner.jpg",
+  poster: "grinch.jpg"
+},
+
+];
+
+// Inject Movies into Gallery
+const gallery = document.getElementById("movie-gallery");
+
+movies.forEach(movie => {
+  const card = document.createElement("div");
+  card.classList.add("movie-card");
+  card.innerHTML = `
+    <img src="${movie.poster}" alt="${movie.title}" />
+    <div class="movie-info">
+      <h3>${movie.title}</h3>
+      <p>⭐ ${movie.rating} | ${movie.genre} | ${movie.year}</p>
+    </div>
+  `;
+  card.addEventListener("click", () => updateHero(movie));
+  gallery.appendChild(card);
+});
+
+// Update Hero Section Dynamically
+function updateHero(movie) {
+  const hero = document.getElementById("hero");
+  document.getElementById("hero-title").textContent = movie.title;
+  document.getElementById("hero-description").textContent = movie.description;
+  document.getElementById("hero-rating").textContent = `⭐ ${movie.rating}`;
+  document.getElementById("hero-genre").textContent = `• ${movie.genre}`;
+  document.getElementById("hero-year").textContent = `• ${movie.year}`;
+  hero.style.backgroundImage = `linear-gradient(to bottom, rgba(0,0,0,0.4), #0c0c0c), url('${movie.banner}')`;
+}
+
+// Movie Search Filter
+const searchBar = document.querySelector('.search-bar');
+searchBar.addEventListener('input', e => {
+  const searchText = e.target.value.toLowerCase();
+  document.querySelectorAll('.movie-card').forEach(card => {
+    const title = card.querySelector('h3').textContent.toLowerCase();
+    card.style.display = title.includes(searchText) ? '' : 'none';
+  });
+
+});
+const favBtn = document.getElementById("fav-btn");
+let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+function updateHero(movie) {
+  const hero = document.getElementById("hero");
+  document.getElementById("hero-title").textContent = movie.title;
+  document.getElementById("hero-description").textContent = movie.description;
+  document.getElementById("hero-rating").textContent = `⭐ ${movie.rating}`;
+  document.getElementById("hero-genre").textContent = `• ${movie.genre}`;
+  document.getElementById("hero-year").textContent = `• ${movie.year}`;
+  hero.style.backgroundImage = `linear-gradient(to bottom, rgba(0,0,0,0.4), #0c0c0c), url('${movie.banner}')`;
+
+  // Update favorite button
+  favBtn.textContent = favorites.includes(movie.title) ? "💚 Favorited" : "♡ Favorite";
+  favBtn.onclick = () => toggleFavorite(movie.title);
+}
+
+function toggleFavorite(title) {
+  if (favorites.includes(title)) {
+    favorites = favorites.filter(fav => fav !== title);
+  } else {
+    favorites.push(title);
+  }
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  favBtn.textContent = favorites.includes(title) ? "💚 Favorited" : "♡ Favorite";
+}
+
+// Watch button (you can link it to an actual page)
+document.getElementById("watch-btn").addEventListener("click", () => {
+  alert("Playing movie...");
+});
+
+
