@@ -146,6 +146,12 @@ function updateHero(movie) {
   // Update favorite button
   favBtn.textContent = favorites.includes(movie.title) ? "💚 Favorited" : "♡ Favorite";
   favBtn.onclick = () => toggleFavorite(movie.title);
+
+// Restart hero animation
+const heroContent = document.querySelector(".hero-content");
+heroContent.style.animation = "none";
+void heroContent.offsetWidth; // force reflow to restart animation
+heroContent.style.animation = "heroFadeUp 1.2s ease-out";
 }
 
 function toggleFavorite(title) {
@@ -163,5 +169,6 @@ document.getElementById("watch-btn").addEventListener("click", () => {
   alert("Playing movie...");
 });
 updateHero(movies[0]);
+
 
 
