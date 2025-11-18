@@ -322,5 +322,23 @@ footer {
   opacity: 0.8;
 }
 
+/* Smooth upward fade + slide animation */
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: heroFadeUp 1.2s ease-out;
+}
+
+
+
 
 
