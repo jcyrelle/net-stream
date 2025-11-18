@@ -26,7 +26,7 @@ body {
 .left-section {
   display: flex;
   align-items: center;
-  gap: 40px; /* space between logo and search bar */
+  gap: 20px; /* space between logo and search bar */
 }
 
 .right-section {
@@ -337,6 +337,7 @@ footer {
 .hero-content {
   animation: heroFadeUp 1.2s ease-out;
 }
+
 
 
 
