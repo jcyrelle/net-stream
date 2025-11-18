@@ -57,7 +57,7 @@ body {
   padding: 10px 25px;
   font-size: 1rem;
   font-weight: 600;
-  margin-left: 600px; /* adds space after search bar */
+  margin-left: 560px; /* adds space after search bar */
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -337,6 +337,7 @@ footer {
 .hero-content {
   animation: heroFadeUp 1.2s ease-out;
 }
+
 
 
 
