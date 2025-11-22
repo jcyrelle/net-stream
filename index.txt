@@ -6,6 +6,9 @@
   <title>NetStream</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
+
+
 <body>
   <header class="navbar">
   <div class="left-section">
@@ -30,6 +33,8 @@
         <span id="hero-genre">• Sci-Fi</span>
         <span id="hero-year">• 2010</span>
       </div>
+<div class="hero-cast" id="hero-cast"></div>
+
 
 <div class="hero-buttons">
   <button id="watch-btn">▶ Watch Now</button>
@@ -73,6 +78,58 @@
   <footer>
     <p>© 2025 Netstream. All rights reserved.</p>
   </footer>
+<!-- SUBSCRIPTION POPUP -->
+<div id="subscription-popup" class="popup-overlay">
+  <div class="popup-box">
+
+    <h2 class="popup-title">Choose Your Plan</h2>
+
+    <div class="plans-container">
+
+      <!-- BASIC -->
+      <div class="plan-card">
+        <h3>Basic</h3>
+        <p class="price">₱149 / month</p>
+        <ul>
+          <li>Good quality (720p)</li>
+          <li>Watch on 1 device</li>
+          <li>Unlimited movies & shows</li>
+        </ul>
+        <button class="choose-btn">Get Basic</button>
+      </div>
+
+      <!-- STANDARD - BEST OFFER -->
+      <div class="plan-card best-offer">
+        <div class="offer-badge">Best Offer</div>
+        <h3>Standard</h3>
+        <p class="price">₱249 / month</p>
+        <ul>
+          <li>Full HD quality (1080p)</li>
+          <li>Watch on 2 devices</li>
+          <li>Unlimited downloads</li>
+        </ul>
+        <button class="choose-btn">Get Standard</button>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="plan-card">
+        <h3>Premium</h3>
+        <p class="price">₱399 / month</p>
+        <ul>
+          <li>4K Ultra HD + HDR</li>
+          <li>Watch on 4 devices</li>
+          <li>Highest streaming quality</li>
+        </ul>
+        <button class="choose-btn">Get Premium</button>
+      </div>
+
+    </div>
+
+    <button id="close-popup" class="close-popup">Close</button>
+  </div>
+</div>
+
+
 
   <script src="script.js"></script>
 </body>
