@@ -1,95 +1,126 @@
 // Movie Data
 const movies = [
-  {
-    title: "Inception",
-    year: "2010",
-    genre: "Sci-Fi",
-    rating: "8.8/10",
-    description: "A thief who steals secrets through dream invasion must perform the impossible — inception.",
-    banner: "inception-banner.jpg",
-    poster: "inception.jpg"
-  },
-  {
-    title: "Joker",
-    year: "2019",
-    genre: "Drama",
-    rating: "8.5/10",
-    description: "Arthur Fleck, a failed comedian, descends into madness and becomes Gotham’s infamous Joker.",
-    banner: "joker-banner.jpg",
-    poster: "joker.jpg"
-  },
-  {
-    title: "Jurassic World: Fallen Kingdom",
-    year: "2018",
-    genre: "Action/Sci-Fi",
-    rating: "6.2/10",
-    description: "When the island's dormant volcano begins roaring to life, Owen and Claire mount a campaign to rescue the remaining dinosaurs from extinction.",
-    banner: "jurassic-banner.jpg",
-    poster: "jurassic.jpg"
+ {
+  title: "Inception",
+  year: "2010",
+  genre: "Sci-Fi",
+  rating: "8.8/10",
+  description: "A master thief who infiltrates dreams is offered a final chance at redemption: plant an idea deep within a target’s subconscious. But the deeper the team dives, the more dangerous the dreamworld becomes.",
+  banner: "inception-banner.jpg",
+  poster: "inception.jpg",
+  cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"]
 },
-  {
-    title: "Interstellar",
-    year: "2014",
-    genre: "Adventure",
-    rating: "8.6/10",
-    description: "A team of explorers travels through a wormhole to ensure humanity's survival.",
-    banner: "interstellar-banner.jpg",
-    poster: "interstellar.jpg"
-  },
-  {
-    title: "It",
-    year: "2017",
-    genre: "Horror",
-    rating: "7.3/10",
-    description: "A group of kids faces their worst fears when an evil clown terrorizes their town.",
-    banner: "it-banner.jpg",
-    poster: "it.jpg"
-  },
-  {
-    title: "The Dark Knight",
-    year: "2008",
-    genre: "Action",
-    rating: "9.0/10",
-    description: "Batman faces his greatest nemesis, the Joker, in a battle for Gotham’s soul.",
-    banner: "dark knight-banner.jpg",
-    poster: "dark knight.jpg"
-  },
-  {
-    title: "Dune",
-    year: "2021",
-    genre: "Sci-Fi",
-    rating: "8.0/10",
-    description: "Paul Atreides must travel to a dangerous desert planet to ensure the future of his family.",
-    banner: "dune-banner.jpg",
-    poster: "dune.jpg"
-  },
-  {
-    title: "Encanto",
-    year: "2021",
-    genre: "Animation/Family",
-    rating: "7.3/10",
-    description: "A young Colombian girl, the only member of her family without magical powers, discovers her own extraordinary gift while uncovering the secrets of her family’s magic.",
-    banner: "encanto-banner.jpg",
-    poster: "encanto.jpg"
+{
+  title: "Joker",
+  year: "2019",
+  genre: "Drama",
+  rating: "8.5/10",
+  description: "Struggling with isolation and a broken society, Arthur Fleck spirals into madness, transforming into the infamous Joker as he discovers a disturbing sense of purpose in chaos.",
+  banner: "joker-banner.jpg",
+  poster: "joker.jpg",
+  cast: ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"]
 },
-  {
-    title: "13 Hours",
-    year: "2016",
-    genre: "Action/Drama",
-    rating: "7.3/10",
-    description: "During a terrorist attack on a U.S. compound in Libya, six members of a security team fight to defend their fellow Americans.",
-    banner: "13hours-banner.jpg",
-    poster: "13hours.jpg"
+{
+  title: "Jurassic World: Fallen Kingdom",
+  year: "2018",
+  genre: "Action/Sci-Fi",
+  rating: "6.2/10",
+  description: "With the island’s volcano threatening extinction for the remaining dinosaurs, Owen and Claire launch a daring rescue mission that uncovers a deadly conspiracy threatening the fate of the world.",
+  banner: "jurassic-banner.jpg",
+  poster: "jurassic.jpg",
+  cast: ["Chris Pratt", "Bryce Dallas Howard", "Rafe Spall"]
+},
+{
+  title: "Interstellar",
+  year: "2014",
+  genre: "Adventure",
+  rating: "8.6/10",
+  description: "As Earth faces collapse, a group of astronauts journeys beyond a wormhole in search of a new home for humanity, confronting the limits of science, time, and the power of love.",
+  banner: "interstellar-banner.jpg",
+  poster: "interstellar.jpg",
+  cast: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+},
+{
+  title: "It",
+  year: "2017",
+  genre: "Horror",
+  rating: "7.3/10",
+  description: "Seven children confront a shape-shifting entity that emerges every 27 years to feed on fear, forcing them to face their deepest nightmares to survive.",
+  banner: "it-banner.jpg",
+  poster: "it.jpg",
+  cast: ["Bill Skarsgård", "Finn Wolfhard", "Jaeden Martell"]
+},
+{
+  title: "The Dark Knight",
+  year: "2008",
+  genre: "Action",
+  rating: "9.0/10",
+  description: "Batman faces a ruthless criminal mastermind known as the Joker, whose reign of terror pushes Gotham and its hero to the brink of moral chaos.",
+  banner: "dark knight-banner.jpg",
+  poster: "dark knight.jpg",
+  cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+},
+{
+  title: "Dune",
+  year: "2021",
+  genre: "Sci-Fi",
+  rating: "8.0/10",
+  description: "Destined for greatness, Paul Atreides must navigate betrayal, prophecy, and war on the desert planet Arrakis the only source of the universe’s most valuable resource.",
+  banner: "dune-banner.jpg",
+  poster: "dune.jpg",
+  cast: ["Timothée Chalamet", "Zendaya", "Oscar Isaac"]
+},
+{
+  title: "Encanto",
+  year: "2021",
+  genre: "Animation/Family",
+  rating: "7.3/10",
+  description: "Born into a magical family where everyone has a unique gift except her, Mirabel sets out to save the miracle that holds her family together discovering her own strength along the way.",
+  banner: "encanto-banner.jpg",
+  poster: "encanto.jpg",
+  cast: ["Stephanie Beatriz", "John Leguizamo", "Maria Cecilia Botero"]
+},
+{
+  title: "13 Hours",
+  year: "2016",
+  genre: "Action/Drama",
+  rating: "7.3/10",
+  description: "When a U.S. compound in Libya comes under attack, an elite security team fights through overwhelming odds to protect lives in a harrowing true-story battle for survival.",
+  banner: "13hours-banner.jpg",
+  poster: "13hours.jpg",
+  cast: ["John Krasinski", "James Badge Dale", "Pablo Schreiber"]
 },
 {
   title: "Inside Out 2",
   year: "2024",
   genre: "Animation/Family",
   rating: "7.9/10",
-  description: "Teenager Riley navigates new emotions like Anxiety, Envy, and Embarrassment as she faces the challenges of growing up and finding her true self.",
+  description: "As teenage Riley faces new challenges, a surge of unfamiliar emotions including Anxiety and Envy enters Headquarters, turning her world upside down in a heartfelt journey of growing up.",
   banner: "inside out 2-banner.jpg",
-  poster: "inside out 2.jpg"
+  poster: "inside out 2.jpg",
+  cast: ["Amy Poehler", "Maya Hawke", "Phyllis Smith"]
 },
+{
+  title: "John Wick: Ballerina",
+  year: "2025",
+  genre: "Action/Thriller",
+  rating: "8.1/10",
+  description: "Trained as both a dancer and an assassin, a deadly ballerina hunts down the killers of her family crossing paths with legendary hitman John Wick in the perilous criminal underworld.",
+  banner: "jwballerina-banner.jpg",
+  poster: "jwballerina.jpg",
+  cast: ["Ana de Armas", "Keanu Reeves", "Lance Reddick"]
+},
+{
+  title: "The Grinch",
+  year: "2018",
+  genre: "Animation/Family",
+  rating: "8.8/10",
+  description: "Determined to steal Christmas from the joyful residents of Whoville, the Grinch sets his sneaky plan in motion — only to discover that kindness can change even the coldest heart.",
+  banner: "grinch-banner.jpg",
+  poster: "grinch.jpg",
+  cast: ["Benedict Cumberbatch", "Rashida Jones", "Kenan Thompson"]
+},
+
 
 ];
 
@@ -143,11 +174,17 @@ function updateHero(movie) {
   document.getElementById("hero-year").textContent = `• ${movie.year}`;
   hero.style.backgroundImage = `linear-gradient(to bottom, rgba(0,0,0,0.4), #0c0c0c), url('${movie.banner}')`;
 
+const castContainer = document.getElementById("hero-cast");
+castContainer.innerHTML = movie.cast
+  .map(actor => `<span>${actor}</span>`)
+  .join("");
+
+
   // Update favorite button
   favBtn.textContent = favorites.includes(movie.title) ? "💚 Favorited" : "♡ Favorite";
   favBtn.onclick = () => toggleFavorite(movie.title);
 
-// Restart hero animation
+  // Restart hero animation
 const heroContent = document.querySelector(".hero-content");
 heroContent.style.animation = "none";
 void heroContent.offsetWidth; // force reflow to restart animation
@@ -170,5 +207,22 @@ document.getElementById("watch-btn").addEventListener("click", () => {
 });
 updateHero(movies[0]);
 
+
+// OPEN POPUP
+document.querySelector(".subscribe-btn").addEventListener("click", () => {
+  document.getElementById("subscription-popup").style.display = "flex";
+});
+
+// CLOSE POPUP
+document.getElementById("close-popup").addEventListener("click", () => {
+  document.getElementById("subscription-popup").style.display = "none";
+});
+
+// Plan Buttons
+document.querySelectorAll(".choose-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("Thank you for choosing a plan! 🎉");
+  });
+});
 
 
