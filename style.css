@@ -338,6 +338,174 @@ footer {
   animation: heroFadeUp 1.2s ease-out;
 }
 
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #111;
+  padding: 30px;
+  width: 75%;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,255,136,0.3);
+  animation: zoomIn 0.3s ease;
+}
+
+.popup-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #00ff88;
+  margin-bottom: 15px;
+}
+
+.popup-subtitle {
+  text-align: center;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+/* Plans Layout */
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.plan-card {
+  background: #1b1b1b;
+  border-radius: 18px;
+  padding: 25px;
+  border: 2px solid #004600;
+  transition: 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00ff88;
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  color: #00ff88;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.plan-card ul {
+  margin-bottom: 20px;
+}
+
+.plan-card ul li {
+  color: #bbb;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Best Offer Badge */
+.best-offer {
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 20px rgba(0,255,136,0.4);
+  position: relative;
+}
+
+.offer-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #00ff88;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Choose Button */
+.choose-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #00ff88;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.choose-btn:hover {
+  background: #00cc6a;
+  transform: scale(1.05);
+}
+
+/* Close Button */
+.close-popup {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: #333;
+  border: 2px solid #00ff88;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  transition: 0.3s;
+}
+
+.close-popup:hover {
+  background: #00ff88;
+  color: #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.8);}
+  to {transform: scale(1);}
+}
+
+.hero-cast {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #00ff88;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-cast span {
+  background: rgba(0, 255, 136, 0.15);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #00ff88;
+}
+
+
+
+
 
 
 
