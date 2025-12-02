@@ -13,27 +13,33 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 10px 30px;
+  justify-content: space-between;
+  padding: 10px 40px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
+  height: 100px;
   z-index: 10;
-  height: 100px; /* adjust if needed */
 }
 
 .left-section {
   display: flex;
   align-items: center;
-  gap: 20px; /* space between logo and search bar */
+  gap: 60px; /* logo ↔ search */
 }
 
 .right-section {
   display: flex;
   align-items: center;
-  
+  gap: 25px; /* space between subscribe & profile */
 }
+
+/* REMOVE this ❌ */
+.subscribe-btn {
+  margin-left: 0;
+}
+
 
 .profile-img {
   width: 45px;
@@ -502,6 +508,8 @@ footer {
   border-radius: 20px;
   border: 1px solid #00ff88;
 }
+
+
 
 
 
