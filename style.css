@@ -509,6 +509,38 @@ footer {
   border: 1px solid #00ff88;
 }
 
+.trailer-btn {
+  background: transparent;
+  border: 2px solid #00ff88;
+  color: #00ff88;
+  font-weight: 600;
+}
+
+.trailer-btn:hover {
+  background: #00ff88;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.trailer-box iframe {
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.trailer-info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: #00ff88;
+  font-weight: 500;
+}
+
+.trailer-cast {
+  text-align: center;
+  color: #bbb;
+  margin-bottom: 20px;
+}
 
 
 
