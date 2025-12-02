@@ -26,7 +26,7 @@ body {
 .left-section {
   display: flex;
   align-items: center;
-  gap: 20px; /* space between logo and search bar */
+  gap: 80px; /* space between logo and search bar */
 }
 
 .right-section {
@@ -502,6 +502,7 @@ footer {
   border-radius: 20px;
   border: 1px solid #00ff88;
 }
+
 
 
 
