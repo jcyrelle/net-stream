@@ -111,7 +111,7 @@ cast: ["Amy Poehler", "Maya Hawke", "Phyllis Smith"],
 youtubeId: "LEjhY15eCx0"
 },
 {
-title: "John Wick: Ballerina",
+title: "From the World of John Wick: Ballerina",
 year: "2025",
 genre: "Action/Thriller",
 rating: "8.1/10",
@@ -267,5 +267,6 @@ trailerPopup.addEventListener("click", (e) => {
     trailerVideo.src = "";
   }
 });
+
 
 
