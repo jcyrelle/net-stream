@@ -7,24 +7,49 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-
+<!-- TRAILER POPUP -->
+<div id="trailer-popup" class="popup-overlay">
+  <div class="popup-box trailer-box">
+    <h2 id="trailer-title" class="popup-title">Inception</h2>
+    <iframe
+      id="trailer-video"
+      width="100%"
+      height="400"
+      src=""
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p id="trailer-description" class="popup-subtitle">
+      A skilled thief who steals secrets through dream-sharing technology
+      is given a chance at redemption.
+    </p>
+    <div class="trailer-info">
+      <span>• <b id="trailer-rating">8.8/10</b></span>
+      <span>• <b id="trailer-genre">Sci-Fi</b></span>
+      <span>• <b id="trailer-year">2010</b></span>
+    </div>
+    <div class="trailer-cast">
+      <strong>Cast:</strong>
+      <span id="trailer-cast">Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page</span>
+    </div>
+    <button id="close-trailer" class="close-popup">Close</button>
+  </div>
+</div>
 
 <body>
   <header class="navbar">
-  <div class="left-section">
-    <div class="logo">
-      <img src="logo.png" alt="Netstream Logo" />
+    <div class="left-section">
+      <div class="logo">
+        <img src="logo.png" alt="Netstream Logo" />
+      </div>
+      <input type="text" class="search-bar" placeholder="Search movies..." />
     </div>
-    <input type="text" class="search-bar" placeholder="Search movies..." />
-  </div>
-
-  <div class="right-section">
-    <button class="subscribe-btn">Subscribe</button>
-    <img src="profile.png" alt="User Profile" class="profile-img" />
-  </div>
-</header>
-
-
+    <div class="right-section">
+      <button class="subscribe-btn">Subscribe</button>
+      <img src="profile.png" alt="User Profile" class="profile-img" />
+    </div>
+  </header>
 
   <section class="hero" id="hero">
     <div class="hero-content">
@@ -37,13 +62,12 @@
         <span id="hero-genre">• Sci-Fi</span>
         <span id="hero-year">• 2010</span>
       </div>
-<div class="hero-cast" id="hero-cast"></div>
-
-
-<div class="hero-buttons">
-  <button id="watch-btn">▶ Watch Now</button>
-  <button id="fav-btn" class="fav-btn">♡ Favorite</button>
-</div>
+      <div class="hero-cast" id="hero-cast"></div>
+      <div class="hero-buttons">
+        <button id="watch-btn">▶ Watch Now</button>
+        <button id="trailer-btn" class="trailer-btn">🎬 Watch Trailer</button>
+        <button id="fav-btn" class="fav-btn">♡ Favorite</button>
+      </div>
     </div>
   </section>
 
@@ -54,87 +78,81 @@
     </div>
   </main>
 
-<section class="reasons-section">
-  <h2>More Reasons to Join</h2>
-  <div class="reasons-container">
-    <div class="reason-card">
-      <h3>Enjoy on your TV</h3>
-      <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+  <section class="reasons-section">
+    <h2>More Reasons to Join</h2>
+    <div class="reasons-container">
+      <div class="reason-card">
+        <h3>Enjoy on your TV</h3>
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Download your shows to watch offline</h3>
+        <p>Save your favorites easily and always have something to watch.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Watch everywhere</h3>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Create profiles for kids</h3>
+        <p>Send kids on adventures with their favorite characters in a space made just for them free with your membership.</p>
+      </div>
     </div>
-
-    <div class="reason-card">
-      <h3>Download your shows to watch offline</h3>
-      <p>Save your favorites easily and always have something to watch.</p>
-    </div>
-
-    <div class="reason-card">
-      <h3>Watch everywhere</h3>
-      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-    </div>
-
-    <div class="reason-card">
-      <h3>Create profiles for kids</h3>
-      <p>Send kids on adventures with their favorite characters in a space made just for them free with your membership.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <footer>
     <p>© 2025 Netstream. All rights reserved.</p>
   </footer>
-<!-- SUBSCRIPTION POPUP -->
-<div id="subscription-popup" class="popup-overlay">
-  <div class="popup-box">
 
-    <h2 class="popup-title">Choose Your Plan</h2>
-
-    <div class="plans-container">
-
-      <!-- BASIC -->
-      <div class="plan-card">
-        <h3>Basic</h3>
-        <p class="price">₱149 / month</p>
-        <ul>
-          <li>Good quality (720p)</li>
-          <li>Watch on 1 device</li>
-          <li>Unlimited movies & shows</li>
-        </ul>
-        <button class="choose-btn">Get Basic</button>
+  <!-- SUBSCRIPTION POPUP -->
+  <div id="subscription-popup" class="popup-overlay">
+    <div class="popup-box">
+      <h2 class="popup-title">Choose Your Plan</h2>
+      <div class="plans-container">
+        <!-- BASIC -->
+        <div class="plan-card">
+          <h3>Basic</h3>
+          <p class="price">₱149 / month</p>
+          <ul>
+            <li>Good quality (720p)</li>
+            <li>Watch on 1 device</li>
+            <li>Unlimited movies & shows</li>
+          </ul>
+          <button class="choose-btn">Get Basic</button>
+        </div>
+        <!-- STANDARD - BEST OFFER -->
+        <div class="plan-card best-offer">
+          <div class="offer-badge">Best Offer</div>
+          <h3>Standard</h3>
+          <p class="price">₱249 / month</p>
+          <ul>
+            <li>Full HD quality (1080p)</li>
+            <li>Watch on 2 devices</li>
+            <li>Unlimited downloads</li>
+          </ul>
+          <button class="choose-btn">Get Standard</button>
+        </div>
+        <!-- PREMIUM -->
+        <div class="plan-card">
+          <h3>Premium</h3>
+          <p class="price">₱399 / month</p>
+          <ul>
+            <li>4K Ultra HD + HDR</li>
+            <li>Watch on 4 devices</li>
+            <li>Highest streaming quality</li>
+          </ul>
+          <button class="choose-btn">Get Premium</button>
+        </div>
       </div>
-
-      <!-- STANDARD - BEST OFFER -->
-      <div class="plan-card best-offer">
-        <div class="offer-badge">Best Offer</div>
-        <h3>Standard</h3>
-        <p class="price">₱249 / month</p>
-        <ul>
-          <li>Full HD quality (1080p)</li>
-          <li>Watch on 2 devices</li>
-          <li>Unlimited downloads</li>
-        </ul>
-        <button class="choose-btn">Get Standard</button>
-      </div>
-
-      <!-- PREMIUM -->
-      <div class="plan-card">
-        <h3>Premium</h3>
-        <p class="price">₱399 / month</p>
-        <ul>
-          <li>4K Ultra HD + HDR</li>
-          <li>Watch on 4 devices</li>
-          <li>Highest streaming quality</li>
-        </ul>
-        <button class="choose-btn">Get Premium</button>
-      </div>
-
+      <button id="close-popup" class="close-popup">Close</button>
     </div>
-
-    <button id="close-popup" class="close-popup">Close</button>
   </div>
-</div>
-
-
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
