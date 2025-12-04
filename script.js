@@ -130,7 +130,7 @@ description: "Determined to steal Christmas from the joyful residents of Whovill
 banner: "grinch-banner.jpg",
 poster: "grinch.jpg",
 cast: ["Benedict Cumberbatch", "Rashida Jones", "Kenan Thompson"],
-youtubeId: "Pj2NOTanzWQ"
+youtubeId: "vjnqABgxfO0"
 }
 ];
 
@@ -267,3 +267,4 @@ trailerPopup.addEventListener("click", (e) => {
     trailerVideo.src = "";
   }
 });
+
