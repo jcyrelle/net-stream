@@ -119,7 +119,7 @@ description: "Trained as both a dancer and an assassin, a deadly ballerina hunts
 banner: "jwballerina-banner.jpg",
 poster: "jwballerina.jpg",
 cast: ["Ana de Armas", "Keanu Reeves", "Lance Reddick"],
-youtubeId: "5y4qUDF77Ao"
+youtubeId: "yNN2PoilSp4"
 },
 {
 title: "The Grinch",
@@ -267,4 +267,5 @@ trailerPopup.addEventListener("click", (e) => {
     trailerVideo.src = "";
   }
 });
+
 
