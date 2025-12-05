@@ -1,0 +1,48 @@
+// SUBSCRIPTION POPUP
+document.querySelector(".subscribe-btn").addEventListener("click", () => {
+  document.getElementById("subscription-popup").style.display = "flex";
+});	
+
+document.getElementById("close-popup").addEventListener("click", () => {
+  document.getElementById("subscription-popup").style.display = "none";
+});
+
+// CTA Subscribe Button
+document.getElementById("cta-subscribe").addEventListener("click", () => {
+  document.getElementById("subscription-popup").style.display = "flex";
+});
+
+// Plan Buttons
+document.querySelectorAll(".choose-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("Thank you for choosing a plan! 🎉");
+  });
+});
+
+// Smooth scroll animations on scroll
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -100px 0px"
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animation = "fadeInUp 0.8s ease-out forwards";
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Observe sections for animation
+document.querySelectorAll('.about-container, .mission-content, .offer-grid, .why-features, .cta-content').forEach(el => {
+  el.style.opacity = "0";
+  observer.observe(el);
+});
+
+// Close popup when clicking outside
+document.getElementById("subscription-popup").addEventListener("click", (e) => {
+  if (e.target.id === "subscription-popup") {
+    document.getElementById("subscription-popup").style.display = "none";
+  }
+});
