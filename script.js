@@ -266,7 +266,10 @@ trailerPopup.addEventListener("click", (e) => {
     trailerPopup.style.display = "none";
     trailerVideo.src = "";
   }
+
 });
+
+
 
 
 
