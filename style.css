@@ -47,7 +47,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -81,7 +81,7 @@ body {
   background-color: #005000;
   color: #000;
   border: 2px solid #004600;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 10px 25px;
   font-size: 1rem;
   font-weight: 600;
@@ -113,7 +113,7 @@ body {
 .search-bar {
   width: 320px; 
   padding: 10px 20px 10px 45px;
-  border-radius: 25px;
+  border-radius: 15px;
   border: 2px solid #004600;
   background-color: #111;
   color: #fff;
@@ -547,4 +547,5 @@ footer {
     gap: 20px;
   }
 }
+
 
