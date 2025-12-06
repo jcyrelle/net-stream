@@ -126,7 +126,7 @@ title: "The Grinch",
 year: "2018",
 genre: "Animation/Family",
 rating: "8.8/10",
-description: "Determined to steal Christmas from the joyful residents of Whoville, the Grinch sets his sneaky plan in motion — only to discover that kindness can change even the coldest heart.",
+description: "Determined to steal Christmas from the joyful residents of Whoville, the Grinch sets his sneaky plan in motion only to discover that kindness can change even the coldest heart.",
 banner: "grinch-banner.jpg",
 poster: "grinch.jpg",
 cast: ["Benedict Cumberbatch", "Rashida Jones", "Kenan Thompson"],
@@ -268,6 +268,7 @@ trailerPopup.addEventListener("click", (e) => {
   }
 
 });
+
 
 
 
