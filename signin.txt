@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In - NetStream</title>
+  <link rel="stylesheet" href="auth-style.css" />
+</head>
+
+<body class="auth-body">
+  <!-- HEADER -->
+  <header class="auth-header">
+    <div class="auth-logo">
+      <a href="index.html">
+        <img src="logo.png" alt="NetStream Logo" />
+      </a>
+    </div>
+  </header>
+
+  <!-- AUTH CONTAINER -->
+  <div class="auth-container">
+    <div class="auth-box">
+      <!-- TOGGLE BUTTONS -->
+      <div class="auth-toggle">
+        <button class="toggle-btn active" id="signin-toggle">Sign In</button>
+        <button class="toggle-btn" id="signup-toggle">Sign Up</button>
+      </div>
+
+      <!-- SIGN IN FORM -->
+      <div class="auth-form-container" id="signin-form-container">
+        <h1>Welcome Back</h1>
+        <p class="auth-subtitle">Sign in to continue streaming</p>
+        
+        <form class="auth-form" id="signin-form">
+          <div class="form-group">
+            <input type="text" id="signin-email" placeholder="Email or Username" required />
+          </div>
+
+          <div class="form-group">
+            <input type="password" id="signin-password" placeholder="Password" required />
+          </div>
+
+          <div class="form-options">
+            <label class="remember-me">
+              <input type="checkbox" id="remember-me" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="help-link">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="auth-btn">Sign In</button>
+        </form>
+      </div>
+
+      <!-- SIGN UP FORM -->
+      <div class="auth-form-container hidden" id="signup-form-container">
+        <h1>Create Account</h1>
+        <p class="auth-subtitle">Join NetStream and start streaming</p>
+        
+        <form class="auth-form" id="signup-form">
+          <div class="form-group">
+            <input type="text" id="signup-name" placeholder="Full Name" required />
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="signup-email" placeholder="Email Address" required />
+          </div>
+
+          <div class="form-group">
+            <input type="password" id="signup-password" placeholder="Password" required />
+          </div>
+
+          <div class="form-group">
+            <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required />
+          </div>
+
+          <label class="terms-checkbox">
+            <input type="checkbox" id="terms" required />
+            <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+          </label>
+
+          <button type="submit" class="auth-btn">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="auth-footer-section">
+    <p>© 2025 NetStream. All rights reserved.</p>
+  </footer>
+
+  <script src="authjs.js"></script>
+</body>
+</html>
