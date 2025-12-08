@@ -131,7 +131,18 @@ banner: "grinch-banner.jpg",
 poster: "grinch.jpg",
 cast: ["Benedict Cumberbatch", "Rashida Jones", "Kenan Thompson"],
 youtubeId: "vjnqABgxfO0"
-}
+},
+{
+  title: "The Lorax",
+  year: "2012",
+  genre: "Animation/Adventure",
+  rating: "7.0/10",
+  description: "A young boy discovers the story of the Lorax, a grumpy but lovable guardian of the forest who fights to protect the trees from those who seek to destroy them.",
+  banner: "lorax-banner.jpg",
+  poster: "lorax.jpg",
+  cast: ["Danny DeVito", "Zac Efron", "Taylor Swift"],
+  youtubeId: "dNMBVVdrMKo"
+},
 ];
 
 // Inject Movies into Gallery
@@ -268,6 +279,7 @@ trailerPopup.addEventListener("click", (e) => {
   }
 
 });
+
 
 
 
