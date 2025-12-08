@@ -165,6 +165,17 @@ youtubeId: "vjnqABgxfO0"
   cast: ["Josh Brolin", "Austin Abrams", "Julia Garner"],
   youtubeId: "OpThntO9ixc"
 },
+{
+  title: "World War Z",
+  year: "2013",
+  genre: "Action/Horror",
+  rating: "7.0/10",
+  description: "Former UN investigator Gerry Lane travels the globe racing against time to stop a rapidly spreading zombie pandemic that threatens to wipe out humanity.",
+  banner: "worldwarz-banner.jpg",
+  poster: "worldwarz.jpg",
+  cast: ["Brad Pitt", "Mireille Enos", "Daniella Kertesz"],
+  youtubeId: "Md6Dvxdr0AQ"
+},
 ];
 
 // Inject Movies into Gallery
@@ -301,6 +312,7 @@ trailerPopup.addEventListener("click", (e) => {
   }
 
 });
+
 
 
 
