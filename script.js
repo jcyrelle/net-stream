@@ -143,6 +143,17 @@ youtubeId: "vjnqABgxfO0"
   cast: ["Danny DeVito", "Zac Efron", "Taylor Swift"],
   youtubeId: "dNMBVVdrMKo"
 },
+{
+  title: "Fast & Furious Presents: Hobbs & Shaw",
+  year: "2019",
+  genre: "Action/Adventure",
+  rating: "8.8/10",
+  description: "Lawman Luke Hobbs and outcast Deckard Shaw form an unlikely alliance as they team up to stop a genetically enhanced villain threatening global security.",
+  banner: "hobbsandshaw-banner.jpg",
+  poster: "hobbsandshaw.jpg",
+  cast: ["Dwayne Johnson", "Jason Statham", "Idris Elba"],
+  youtubeId: "HZ7PAyCDwEg"
+},
 ];
 
 // Inject Movies into Gallery
@@ -279,6 +290,7 @@ trailerPopup.addEventListener("click", (e) => {
   }
 
 });
+
 
 
 
