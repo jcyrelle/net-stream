@@ -149,7 +149,7 @@ youtubeId: "vjnqABgxfO0"
   genre: "Action/Adventure",
   rating: "8.8/10",
   description: "Lawman Luke Hobbs and outcast Deckard Shaw form an unlikely alliance as they team up to stop a genetically enhanced villain threatening global security.",
-  banner: "hobbsandshaw-banner.jpg",
+  banner: "hobbsanddshaw-banner.jpg",
   poster: "hobbsandshaw.jpg",
   cast: ["Dwayne Johnson", "Jason Statham", "Idris Elba"],
   youtubeId: "HZ7PAyCDwEg"
@@ -290,6 +290,7 @@ trailerPopup.addEventListener("click", (e) => {
   }
 
 });
+
 
 
 
