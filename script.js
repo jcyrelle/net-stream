@@ -154,6 +154,17 @@ youtubeId: "vjnqABgxfO0"
   cast: ["Dwayne Johnson", "Jason Statham", "Idris Elba"],
   youtubeId: "HZ7PAyCDwEg"
 },
+{
+  title: "Weapons",
+  year: "2025",
+  genre: "Horror/Thriller",
+  rating: "8.2/10",
+  description: "A high-intensity horror thriller following interconnected stories that unfold after a disturbing incident, revealing the dark consequences that spiral out of control.",
+  banner: "weapons-banner.jpg",
+  poster: "weapons.jpg",
+  cast: ["Josh Brolin", "Austin Abrams", "Julia Garner"],
+  youtubeId: "OpThntO9ixc"
+},
 ];
 
 // Inject Movies into Gallery
@@ -290,6 +301,7 @@ trailerPopup.addEventListener("click", (e) => {
   }
 
 });
+
 
 
 
