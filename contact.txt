@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - NetStream</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="contactstyle.css" />
 </head>
 
 <body>
@@ -19,12 +19,14 @@
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="active">Contact us</a>
       </nav>
     </div>
     <div class="right-section">
       <button class="subscribe-btn">Subscribe</button>
-      <img src="profile.png" alt="User Profile" class="profile-img" />
+      <a href="signin.html">
+  <img src="profile.png" alt="User Profile" class="profile-img" />
+</a>
     </div>
   </header>
 
@@ -97,29 +99,29 @@
 
         <div class="contact-info-cards">
           <div class="info-card">
-            <div class="info-icon">📧</div>
+            <div class="info-icon"></div>
             <h3>Email Us</h3>
             <p>support@netstream.com</p>
             <p>info@netstream.com</p>
           </div>
 
           <div class="info-card">
-            <div class="info-icon">📞</div>
+            <div class="info-icon"></div>
             <h3>Call Us</h3>
-            <p>+63 (2) 8123-4567</p>
-            <p>Mon-Fri: 9AM - 6PM PHT</p>
+            <p>+63 (9 1025 159 52) </p>
+            <p>Mon-Fri: 8AM - 5PM PHT</p>
           </div>
 
           <div class="info-card">
-            <div class="info-icon">📍</div>
+            <div class="info-icon"></div>
             <h3>Visit Us</h3>
             <p>123 Streaming Avenue</p>
-            <p>Makati City, Metro Manila</p>
+            <p>Davao City, SJP2CD</p>
             <p>Philippines 1200</p>
           </div>
 
           <div class="info-card">
-            <div class="info-icon">💬</div>
+            <div class="info-icon"></div>
             <h3>Live Chat</h3>
             <p>Available 24/7</p>
             <button class="chat-btn">Start Chat</button>
@@ -127,71 +129,6 @@
         </div>
 
         <!-- SOCIAL MEDIA -->
-        <div class="social-section">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a href="#" class="social-icon" title="Facebook">📘</a>
-            <a href="#" class="social-icon" title="Twitter">🐦</a>
-            <a href="#" class="social-icon" title="Instagram">📷</a>
-            <a href="#" class="social-icon" title="YouTube">📺</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ SECTION -->
-  <section class="faq-section">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-container">
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>How do I cancel my subscription?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>You can cancel your subscription anytime by going to Account Settings > Subscription > Cancel Subscription. Your access will continue until the end of your current billing period.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>What payment methods do you accept?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>We accept all major credit cards (Visa, Mastercard, American Express), debit cards, PayPal, and GCash for Philippine customers.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>Can I watch on multiple devices?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>Yes! Depending on your plan: Basic (1 device), Standard (2 devices), or Premium (4 devices simultaneously).</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>How do I reset my password?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>Click on "Forgot Password" on the login page, enter your email, and follow the instructions sent to your inbox.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>Is there a free trial available?</h3>
-          <span class="faq-toggle">+</span>
-        </div>
-        <div class="faq-answer">
-          <p>Yes! New users get a 7-day free trial on any plan. No credit card required for the trial period.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -251,6 +188,6 @@
     </div>
   </div>
 
-  <script src="contact.js"></script>
+  <script src="contactjs.js"></script>
 </body>
 </html>
