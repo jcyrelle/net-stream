@@ -26,20 +26,42 @@ body {
 .left-section {
   display: flex;
   align-items: center;
-  gap: 60px; /* logo ↔ search */
+  gap: 40px;
 }
 
 .right-section {
   display: flex;
   align-items: center;
-  gap: 25px; /* space between subscribe & profile */
+  gap: 25px;
 }
 
-/* REMOVE this ❌ */
-.subscribe-btn {
-  margin-left: 0;
+/* NAVIGATION LINKS */
+.nav-links {
+  display: flex;
+  gap: 30px;
 }
 
+.nav-links a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.1);
+}
+
+.nav-links a.active {
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.15);
+  border: 1px solid #00ff88;
+}
 
 .profile-img {
   width: 45px;
@@ -56,14 +78,13 @@ body {
 }
 
 .subscribe-btn {
-  background-color: #005000;
+  background-color: #00ff88;
   color: #000;
   border: 2px solid #004600;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 10px 25px;
   font-size: 1rem;
   font-weight: 600;
-  margin-left: 560px; /* adds space after search bar */
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -74,18 +95,25 @@ body {
   box-shadow: 0 0 10px #00ff88;
 }
 
+.logo a {
+  text-decoration: none;
+}
 
 .logo img {
-  height: 70px; /* adjust logo height */
+  height: 100px;
   width: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
+.logo img:hover {
+  transform: scale(1.1);
+}
+
 .search-bar {
-  width: 280px; 
+  width: 470px; 
   padding: 10px 20px 10px 45px;
-  border-radius: 25px;
+  border-radius: 15px;
   border: 2px solid #004600;
   background-color: #111;
   color: #fff;
@@ -95,44 +123,6 @@ body {
   background-position: 15px center;
   background-size: 18px;
   transition: all 0.3s ease;
-}
-
-.search-bar:focus {
-  box-shadow: 0 0 15px #00ff88;
-  transform: scale(1.03);
-}
-
-.logo {
-  font-size: 2.5em;
-  font-weight: 700;
-  color: #00ff88;
-}
-
-.logo img {
-  height: 95px;        /* Adjust size as needed */
-  width: auto;
-  vertical-align: middle;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-  transform: scale(1.1);
-}
-.search-bar {
-  width: 300px;                         /* wider input */
-  padding: 12px 20px 12px 45px;         /* extra left padding for icon space */
-  border-radius: 30px;                  /* smooth rounded look */
-  border: 2px solid #004600;            /* glowing green border */
-  background-color: #111;               /* darker background */
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  transition: all 0.3s ease;
-  background-image: url('images/search-icon.svg'); /* optional icon */
-  background-repeat: no-repeat;
-  background-position: 15px center;
-  background-size: 18px;
 }
 
 .search-bar::placeholder {
@@ -145,6 +135,7 @@ body {
   border-color: #004600;
   background-color: #0d0d0d;
   transform: scale(1.03);
+  outline: none;
 }
 
 .hero {
@@ -217,7 +208,6 @@ body {
   color: #000;
   transform: scale(1.05);
 }
-
 
 .movie-section {
   padding: 40px;
@@ -542,12 +532,21 @@ footer {
   margin-bottom: 20px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
 
+  .nav-links a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
 
-
-
-
-
+  .left-section {
+    gap: 20px;
+  }
+}
 
 
 
