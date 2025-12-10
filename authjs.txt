@@ -1,130 +1,73 @@
-// Toggle between Sign In and Sign Up
-const signinToggle = document.getElementById("signin-toggle");
-const signupToggle = document.getElementById("signup-toggle");
-const signinFormContainer = document.getElementById("signin-form-container");
-const signupFormContainer = document.getElementById("signup-form-container");
+document.addEventListener('DOMContentLoaded', function() {
 
-signinToggle.addEventListener("click", () => {
-  signinToggle.classList.add("active");
-  signupToggle.classList.remove("active");
-  signinFormContainer.classList.remove("hidden");
-  signupFormContainer.classList.add("hidden");
+  // Toggle between Sign In and Sign Up
+  const signinToggle = document.getElementById("signin-toggle");
+  const signupToggle = document.getElementById("signup-toggle");
+  const signinFormContainer = document.getElementById("signin-form-container");
+  const signupFormContainer = document.getElementById("signup-form-container");
+
+  if (signinToggle && signupToggle && signinFormContainer && signupFormContainer) {
+
+    signinToggle.addEventListener("click", () => {
+      signinToggle.classList.add("active");
+      signupToggle.classList.remove("active");
+      signinFormContainer.classList.remove("hidden");
+      signupFormContainer.classList.add("hidden");
+    });
+
+    signupToggle.addEventListener("click", () => {
+      signupToggle.classList.add("active");
+      signinToggle.classList.remove("active");
+      signupFormContainer.classList.remove("hidden");
+      signinFormContainer.classList.add("hidden");
+    });
+
+  } else {
+    console.error("Elements missing");
+  }
 });
 
-signupToggle.addEventListener("click", () => {
-  signupToggle.classList.add("active");
-  signinToggle.classList.remove("active");
-  signupFormContainer.classList.remove("hidden");
-  signinFormContainer.classList.add("hidden");
-});
-
-// SIGN IN FORM SUBMISSION
+// SIGN IN FORM
 document.getElementById("signin-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Get form values
   const email = document.getElementById("signin-email").value.trim();
   const password = document.getElementById("signin-password").value;
-  const rememberMe = document.getElementById("remember-me").checked;
 
-  // Basic validation
   if (!email || !password) {
     alert("Please fill in all fields.");
     return;
   }
 
-  // Password length check
-  if (password.length < 6) {
-    alert("Password must be at least 6 characters long.");
-    return;
-  }
-
-  // Simulate successful sign in
-  console.log("Sign In Data:", {
-    email,
-    password: "***hidden***",
-    rememberMe
-  });
-
-  alert("Welcome back! 🎉\n\nSigning you in...");
-  
-  // Redirect to home page after successful sign in
-  setTimeout(() => {
-    window.location.href = "index.html";
-  }, 1000);
+  alert("Signing in...");
+  window.location.href = "index.html";
 });
 
-// SIGN UP FORM SUBMISSION
+// SIGN UP FORM
 document.getElementById("signup-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Get form values
   const name = document.getElementById("signup-name").value.trim();
   const email = document.getElementById("signup-email").value.trim();
   const password = document.getElementById("signup-password").value;
   const confirmPassword = document.getElementById("signup-confirm-password").value;
-  const termsAccepted = document.getElementById("terms").checked;
+  const terms = document.getElementById("terms").checked;
 
-  // Basic validation
   if (!name || !email || !password || !confirmPassword) {
     alert("Please fill in all fields.");
     return;
   }
 
-  // Name validation
-  if (name.length < 2) {
-    alert("Please enter your full name.");
-    return;
-  }
-
-  // Email validation
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    alert("Please enter a valid email address.");
-    return;
-  }
-
-  // Password validation
-  if (password.length < 8) {
-    alert("Password must be at least 8 characters long.");
-    return;
-  }
-
-  // Password match check
   if (password !== confirmPassword) {
     alert("Passwords do not match!");
     return;
   }
 
-  // Terms check
-  if (!termsAccepted) {
-    alert("Please accept the Terms of Service and Privacy Policy.");
+  if (!terms) {
+    alert("You must accept the Terms.");
     return;
   }
 
-  // Simulate successful sign up
-  console.log("Sign Up Data:", {
-    name,
-    email,
-    password: "***hidden***",
-    termsAccepted
-  });
-
-  alert("Welcome to NetStream! 🎉\n\nAccount created successfully!\n\nRedirecting to home page...");
-  
-  // Redirect to home page after successful sign up
-  setTimeout(() => {
-    window.location.href = "index.html";
-  }, 1500);
-});
-
-// Add input animation on focus
-document.querySelectorAll(".form-group input").forEach(input => {
-  input.addEventListener("focus", function() {
-    this.parentElement.style.transform = "scale(1.02)";
-  });
-  
-  input.addEventListener("blur", function() {
-    this.parentElement.style.transform = "scale(1)";
-  });
+  alert("Account created!");
+  window.location.href = "index.html";
 });
