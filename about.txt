@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - NetStream</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="aboutstyle.css" />
 </head>
 
 <body>
@@ -19,11 +19,14 @@
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact us</a>
       </nav>
     </div>
     <div class="right-section">
       <button class="subscribe-btn">Subscribe</button>
-      <img src="profile.png" alt="User Profile" class="profile-img" />
+      <a href="signin.html">
+  <img src="profile.png" alt="User Profile" class="profile-img" />
+</a>
     </div>
   </header>
 
@@ -40,8 +43,10 @@
     <div class="about-container">
       <div class="about-text">
         <h2>About NetStream</h2>
-        <p>NetStream is a premium streaming platform that brings the magic of cinema directly to your screen. We believe entertainment should be accessible, immersive, and tailored to every viewer's taste.</p>
-        <p>From blockbuster hits to hidden gems, NetStream curates a diverse library that spans genres, eras, and cultures—ensuring there's always something extraordinary waiting to be discovered.</p>
+        <p>Welcome to NetStream, your go to online destination for discovering and enjoying movies anytime, anywhere. We created NetStream with one goal in mind: to make entertainment simple, accessible, and enjoyable for everyone.</p>
+<p>At NetStream, we bring together a diverse collection of films from the latest releases to timeless classics so viewers can easily find something they love. Our platform is designed to be fast, smooth, and user-friendly, giving movie lovers a seamless streaming experience without the hassle.</p>
+<p>We believe that great stories should be within reach of every viewer. That’s why we continually update our library, enhance our features, and focus on delivering a modern viewing space where users can relax, explore, and connect with their favorite films.</p>
+
       </div>
       <div class="about-image">
         <div class="image-placeholder">
@@ -58,17 +63,17 @@
       <p>To deliver world-class entertainment experiences that inspire, connect, and captivate audiences across the globe.</p>
       <div class="mission-values">
         <div class="value-card">
-          <div class="value-icon">🌍</div>
+          <div class="value-icon"></div>
           <h3>Global Reach</h3>
           <p>Bringing stories from around the world to your living room</p>
         </div>
         <div class="value-card">
-          <div class="value-icon">⚡</div>
+          <div class="value-icon"></div>
           <h3>Innovation</h3>
           <p>Pioneering the future of streaming technology</p>
         </div>
         <div class="value-card">
-          <div class="value-icon">❤️</div>
+          <div class="value-icon"></div>
           <h3>Passion</h3>
           <p>Driven by our love for storytelling and cinema</p>
         </div>
@@ -76,43 +81,7 @@
     </div>
   </section>
 
-  <!-- WHAT WE OFFER -->
-  <section class="offer-section">
-    <h2>What We Offer</h2>
-    <div class="offer-grid">
-      <div class="offer-card">
-        <div class="offer-icon">🎥</div>
-        <h3>Extensive Library</h3>
-        <p>Thousands of movies and shows across every genre imaginable, from timeless classics to the latest releases.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-icon">🔊</div>
-        <h3>Premium Quality</h3>
-        <p>Crystal-clear 4K Ultra HD resolution with immersive HDR and Dolby Atmos sound for a cinematic experience.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-icon">📱</div>
-        <h3>Multi-Device Access</h3>
-        <p>Stream seamlessly on your TV, laptop, tablet, or phone—anywhere, anytime.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-icon">👨‍👩‍👧‍👦</div>
-        <h3>Personalized Profiles</h3>
-        <p>Create custom profiles for every family member with tailored recommendations.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-icon">📥</div>
-        <h3>Offline Viewing</h3>
-        <p>Download your favorite content and watch offline during travel or commutes.</p>
-      </div>
-      <div class="offer-card">
-        <div class="offer-icon">🎯</div>
-        <h3>Smart Recommendations</h3>
-        <p>AI-powered suggestions that learn your preferences and discover your next favorite film.</p>
-      </div>
-    </div>
-  </section>
-
+ 
   <!-- WHY CHOOSE NETSTREAM -->
   <section class="why-section">
     <div class="why-content">
@@ -204,6 +173,8 @@
     </div>
   </div>
 
-  <script src="about.js"></script>
+  <script src="aboutjs.js"></script>
 </body>
 </html>
+
+
