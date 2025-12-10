@@ -126,12 +126,56 @@ title: "The Grinch",
 year: "2018",
 genre: "Animation/Family",
 rating: "8.8/10",
-description: "Determined to steal Christmas from the joyful residents of Whoville, the Grinch sets his sneaky plan in motion — only to discover that kindness can change even the coldest heart.",
+description: "Determined to steal Christmas from the joyful residents of Whoville, the Grinch sets his sneaky plan in motion only to discover that kindness can change even the coldest heart.",
 banner: "grinch-banner.jpg",
 poster: "grinch.jpg",
 cast: ["Benedict Cumberbatch", "Rashida Jones", "Kenan Thompson"],
 youtubeId: "vjnqABgxfO0"
-}
+},
+{
+  title: "The Lorax",
+  year: "2012",
+  genre: "Animation/Adventure",
+  rating: "7.0/10",
+  description: "A young boy discovers the story of the Lorax, a grumpy but lovable guardian of the forest who fights to protect the trees from those who seek to destroy them.",
+  banner: "lorax-banner.jpg",
+  poster: "lorax.jpg",
+  cast: ["Danny DeVito", "Zac Efron", "Taylor Swift"],
+  youtubeId: "dNMBVVdrMKo"
+},
+{
+  title: "Fast & Furious Presents: Hobbs & Shaw",
+  year: "2019",
+  genre: "Action/Adventure",
+  rating: "8.8/10",
+  description: "Lawman Luke Hobbs and outcast Deckard Shaw form an unlikely alliance as they team up to stop a genetically enhanced villain threatening global security.",
+  banner: "hobbsanddshaw-banner.jpg",
+  poster: "hobbsandshaw.jpg",
+  cast: ["Dwayne Johnson", "Jason Statham", "Idris Elba"],
+  youtubeId: "HZ7PAyCDwEg"
+},
+{
+  title: "Weapons",
+  year: "2025",
+  genre: "Horror/Thriller",
+  rating: "8.2/10",
+  description: "A high-intensity horror thriller following interconnected stories that unfold after a disturbing incident, revealing the dark consequences that spiral out of control.",
+  banner: "weapons-banner.jpg",
+  poster: "weapons.jpg",
+  cast: ["Josh Brolin", "Austin Abrams", "Julia Garner"],
+  youtubeId: "OpThntO9ixc"
+},
+{
+  title: "World War Z",
+  year: "2013",
+  genre: "Action/Horror",
+  rating: "7.0/10",
+  description: "Former UN investigator Gerry Lane travels the globe racing against time to stop a rapidly spreading zombie pandemic that threatens to wipe out humanity.",
+  banner: "worldwarz-banner.jpg",
+  poster: "worldwarz.jpg",
+  cast: ["Brad Pitt", "Mireille Enos", "Daniella Kertesz"],
+  youtubeId: "Md6Dvxdr0AQ"
+},
 ];
 
 // Inject Movies into Gallery
@@ -266,6 +310,15 @@ trailerPopup.addEventListener("click", (e) => {
     trailerPopup.style.display = "none";
     trailerVideo.src = "";
   }
+
 });
+
+
+
+
+
+
+
+
 
 
