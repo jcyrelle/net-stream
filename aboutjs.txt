@@ -1,7 +1,7 @@
 // SUBSCRIPTION POPUP
 document.querySelector(".subscribe-btn").addEventListener("click", () => {
   document.getElementById("subscription-popup").style.display = "flex";
-});
+});	
 
 document.getElementById("close-popup").addEventListener("click", () => {
   document.getElementById("subscription-popup").style.display = "none";
