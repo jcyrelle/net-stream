@@ -41,13 +41,22 @@
   <header class="navbar">
     <div class="left-section">
       <div class="logo">
-        <img src="logo.png" alt="Netstream Logo" />
+        <a href="index.html">
+          <img src="logo.png" alt="Netstream Logo" />
+        </a>
       </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact us</a>
+      </nav>
       <input type="text" class="search-bar" placeholder="Search movies..." />
     </div>
     <div class="right-section">
       <button class="subscribe-btn">Subscribe</button>
-      <img src="profile.png" alt="User Profile" class="profile-img" />
+      <a href="signin.html">
+        <img src="profile.png" alt="User Profile" class="profile-img" />
+      </a>
     </div>
   </header>
 
@@ -55,7 +64,7 @@
     <div class="hero-content">
       <h1 id="hero-title">Inception</h1>
       <p id="hero-description">
-        A skilled thief who steals secrets through dream invasion is offered a chance at redemption if he can perform the impossible — inception.
+        A skilled thief who steals secrets through dream invasion is offered a chance at redemption if he can perform the impossible – inception.
       </p>
       <div class="hero-info">
         <span id="hero-rating">⭐ 8.8/10</span>
@@ -65,7 +74,7 @@
       <div class="hero-cast" id="hero-cast"></div>
       <div class="hero-buttons">
         <button id="watch-btn">▶ Watch Now</button>
-        <button id="trailer-btn" class="trailer-btn">🎬 Watch Trailer</button>
+        <button id="trailer-btn" class="trailer-btn">▶ Watch Trailer</button>
         <button id="fav-btn" class="fav-btn">♡ Favorite</button>
       </div>
     </div>
@@ -151,8 +160,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
