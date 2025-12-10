@@ -4,17 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign In - NetStream</title>
-  <link rel="stylesheet" href="auth-style.css" />
+  <link rel="stylesheet" href="authstyle.css" />
 </head>
 
 <body class="auth-body">
   <!-- HEADER -->
   <header class="auth-header">
+    <a href="index.html" class="back-btn">
+      <span class="back-icon">←</span>
+      <span>Back to Home</span>
+    </a>
     <div class="auth-logo">
       <a href="index.html">
         <img src="logo.png" alt="NetStream Logo" />
       </a>
     </div>
+    <div class="header-spacer"></div>
   </header>
 
   <!-- AUTH CONTAINER -->
